@@ -36,7 +36,6 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full ">
             <a
               className="underline text-blue-600 hover:text-blue-800 visited:text-purple-300 "
