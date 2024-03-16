@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/Resume/Prithvi_K_ R _Resume.pdf"
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub , FaLinkedin} from 'react-icons/fa'
 import { SiLeetcode} from 'react-icons/si'
@@ -35,11 +36,39 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaGithub className='cursor-pointer' size={20} />
-            <FaLinkedin className='cursor-pointer' size={20} />
-            <SiLeetcode className='cursor-pointer' size={20} />
+          </h2>
+          <div className="flex justify-between pt-6 max-w-[200px] w-full ">
+            <a
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-300 "
+              href="https://github.com/prithvikr"
+              target="_blank"
+            >
+              <FaGithub className="cursor-pointer" size={30} />
+            </a>
+            <a
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-300"
+              href="https://www.linkedin.com/in/prithvi-k-r/"
+              target="_blank"
+            >
+              <FaLinkedin className="cursor-pointer" size={30} />
+            </a>
+            <a
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-300"
+              href="https://leetcode.com/prithvi_k_r/"
+              target="_blank"
+            >
+              <SiLeetcode className="cursor-pointer" size={30} />
+            </a>
           </div>
+          <button className="button px-8 shadow-gray-500 shadow-md border border-gray-800 py-5 mt-5 bg-gradient-to-t from-gray-500 rounded-full to-slate-500 hover:from-gray-700 hover:to-gray-100">
+            <a
+              className="button"
+              href={resume}
+              download="Prithvi_K_R_Resume.pdf"
+            >
+              Download Resume
+            </a>
+          </button>
         </div>
       </div>
     </div>
