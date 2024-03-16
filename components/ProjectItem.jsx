@@ -1,19 +1,24 @@
 import React from 'react'
 
-const ProjectItem = ({img , title}) => {
+const ProjectItem = ({img , title, techstack}) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full object-contain shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]'>
-      <img src={img} alt="image here"  className='rounded-xl group-hover:opacity-10'/>
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl font-bold text-white tracking-wider text-center'>
-            {title}
-        </h3>
-        <p className='pb-4 pt-2 text-white text-center'>React Js</p>
-        <a href="">
-            <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>More Info</p>
-        </a>
-      </div>
+    <div className="bg-slate-600 border border-gray-800 rounded-2xl p-5 flex-1 cursor-pointer hover:bg-gray-500">
+    <img 
+    src={img} className="w-full h-60" />
+    <h3 className="text-2xl font-semibold text-center mt-8">{title}
+    </h3>
+    <h4 className="text-gray-400 text-sm mt-2">
+      {techstack}
+    </h4>
+    <div className="flex gap-2 mt-12">
+      <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
+        Live preview
+      </button>
+      <button className=" flex-1 text-sm py-3  bg-gradient-to-t from-blue-400  to-cyan-300 border rounded-full  hover:border-blue-500 hover:text-blue-500">
+        Checkout github
+      </button>
     </div>
+  </div>
   )
 }
 
